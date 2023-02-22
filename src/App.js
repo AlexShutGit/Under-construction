@@ -13,7 +13,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [formValid, setFromValid] = useState(false)
   const [alertShow, setAlertShow] = useState(false)
-  const [successSubscribe, setSuccessSubscribe] = useState(false);
+  const [successSubscribe, setSuccessSubscribe] = useState(true);
 
   const emailHandler = (e) => {
     setEmail(e.target.value)
@@ -57,6 +57,7 @@ function App() {
         axios.post(`https://63f5f568ab76703b15b531a3.mockapi.io/mails`, email)
         setEmail('');
         setFromValid(false)
+        setSuccessSubscribe(true)
         setAlertShow(true)
       }
     } catch (error) {
