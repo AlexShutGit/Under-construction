@@ -1,0 +1,48 @@
+@media screen and (max-width:768px) {
+    .timer {
+        width: 64px !important;
+        height: 82px !important;
+
+        img {
+            content: url('timerTitle768.svg') !important;
+        }
+
+        h2 {
+            margin-top: -33px !important;
+            font-size: 9px !important;
+        }
+    }
+}
+
+.timer {
+    width: 132px;
+    height: 129px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        margin: auto;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 100%;
+        color: #162C4E;
+    }
+
+    img {
+        margin-top: 5px;
+        z-index: 0;
+        content: url('timerTitle.svg')
+    }
+
+    h2 {
+        z-index: 20;
+        margin-top: -42px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFFF;
+    }
+}
